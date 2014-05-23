@@ -828,12 +828,12 @@ uint256 static GetOrphanRoot(const CBlock* pblock)
 
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
-    int64 nSubsidy = 10000000 * COIN;
+    int64 nSubsidy = 100000* COIN;
 
     return nSubsidy + nFees;
 }
 
-static const int64 nTargetTimespan = 5 * 24 * 60 * 60; // Sharecoin :  days 
+static const int64 nTargetTimespan = 730* 24 * 60 * 60; // Sharecoin :  days 
 static const int64 nTargetSpacing = 60; // Sharecoin: 2 minute blocks
 static const int64 nInterval = nTargetTimespan / nTargetSpacing;
 
